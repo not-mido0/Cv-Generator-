@@ -2,7 +2,8 @@ from groq import  Groq
 from docx import Document
 import  os
 
-client = Groq(api_key="PUT_YOUR_KEY")
+Apikey = input("enter your Api Key : ")
+client = Groq(api_key=f"{Apikey}")
 
 def generate_cv(field, job_description, num_cvs):
 
